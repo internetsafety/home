@@ -1,4 +1,3 @@
-<meta name="google-signin-client_id" content="851594728811-slt1ngc4b3th5g9u728m31me0m4tvpt5.apps.googleusercontent.com">
 <h1>Internet Safety</h1>
 <b><h3>Courses:</h3></b>
 <button onclick="trick()">Learn how to safely download a file!</button>
@@ -9,7 +8,34 @@ body {
     background: #ffffff url("background.jpg") no-repeat center;
 }
 </style>
-<div class="g-signin2" data-onsuccess="onSignIn"></div>
+<html lang="en">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="851594728811-slt1ngc4b3th5g9u728m31me0m4tvpt5.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  </head>
+  <body>
+    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    <script>
+      var a = 1
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      };
+      function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires=" + d.toGMTString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
 <script>
 //This script tag is for all functions and should be at the end
 function trick() {
