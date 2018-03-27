@@ -1,1 +1,29 @@
-
+<img src="https://internetsafety.github.io/home/fake4.png" onclick="oops1()">
+<br>
+<button onclick="yay()">Download</button>
+<script>
+var os = [
+    { name: 'Windows Phone', value: 'Windows Phone', version: 'OS' },
+    { name: 'Windows', value: 'Win', version: 'NT' },
+    { name: 'iPhone', value: 'iPhone', version: 'OS' },
+    { name: 'iPad', value: 'iPad', version: 'OS' },
+    { name: 'Kindle', value: 'Silk', version: 'Silk' },
+    { name: 'Android', value: 'Android', version: 'Android' },
+    { name: 'PlayBook', value: 'PlayBook', version: 'OS' },
+    { name: 'BlackBerry', value: 'BlackBerry', version: '/' },
+    { name: 'Macintosh', value: 'Mac', version: 'OS X' },
+    { name: 'Linux', value: 'Linux', version: 'rv' },
+    { name: 'Palm', value: 'Palm', version: 'PalmOS' }
+]
+alert(os);
+function oops1() {
+    alert("Whoops! That was the wrong download link.");
+    alert("You sometimes have to use your best judgement to know what download link to use!");
+}
+function yay() {
+    alert("You got it! That was the right download button!");
+    alert("You can try again or go on to the next level.");
+    window.location = "https://internetsafety.github.io/home/tricks/info";
+    
+}
+</script>
