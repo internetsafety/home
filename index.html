@@ -1,6 +1,3 @@
-<script>
-var fullName = User;
-</script>
 <h1>Internet Safety</h1>
 <b><h3>Courses:</h3></b>
 <button onclick="trick()">Learn how to safely download a file!</button>
@@ -29,7 +26,7 @@ body {
         console.log('Family Name: ' + profile.getFamilyName());
         console.log("Image URL: " + profile.getImageUrl());
         console.log("Email: " + profile.getEmail());
-        fullName = profile.getName();
+        var fullName = profile.getName();
 
         // The ID token you need to pass to your backend:
         var id_token = googleUser.getAuthResponse().id_token;
