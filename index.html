@@ -3,6 +3,8 @@
 <button onclick="trick()">Learn how to safely download a file!</button>
 <br>
 <button onclick="test()">Learn if your browser is safe!</button>
+<br>
+<button onclick="view()">View sorce tool</button>
 <style>
 body {
     background: #ffffff url("background.jpg") no-repeat center;
@@ -41,6 +43,9 @@ function trick() {
 }
 function test() {
   window.location = "https://internetsafety.github.io/home/safety";
+}
+function view() {
+  window.location = "view-source:"prompt("Enter site URL");
 }
     </script>
   </body>
