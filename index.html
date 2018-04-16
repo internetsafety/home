@@ -1,26 +1,53 @@
-<h1>Internet Safety</h1>
-<b><h3>Courses:</h3></b>
-<button onclick="trick()">Learn how to safely download a file!</button>
-<br>
-<br>
-<button onclick="test()">Learn if your browser is safe!</button>
-<br>
-<br>
-<button onclick="view()">View source tool</button>
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('/w3images/forestbridge.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
 button {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
+    text-align: center;
     padding: 15px 32px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
 }
-body {
-    background: #ffffff url("background.jpg") no-repeat center;
-}
 </style>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">Home</a>
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">Internet Safety</h1>
+    <button onclick="trick()">Learn how to safely download a file!</button>
+	<br>
+	<br>
+	<button onclick="test()">Learn if your browser is safe!</button>
+	<br>
+	<br>
+	<button onclick="view()">View source tool</button>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    
+  </div>
+</div>
+
+</body>
+</html>
 <script>
 alert('Hello' + name)
 //DERPDERPDERP
@@ -34,8 +61,3 @@ function view() {
 window.open("view-source:"prompt("Enter site URL"));
 }
     </script>
-  </body>
-</html>
-<script>
-
-</script>
