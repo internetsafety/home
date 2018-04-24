@@ -1,0 +1,31 @@
+<t>Enter your google password to continue: </t><input type="password">
+<button onclick="oops1()">Submit</button>
+<br>
+<img src="https://internetsafety.github.io/home/download.png" width="203" height="50" onclick="yay()">
+<style>
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+<script>
+alert("Enter your Google password, to continue with the download!");
+function oops1() {
+    alert("Whoops! That was the wrong download link.");
+    alert("A lot of adds act like they are big inportant companies, don't be to gulible! Check fo spelling/grammar errors.");
+}
+function yay() {
+    alert("You got it! That was the right download button!");
+    alert("You can try again or go on to the next level.");
+    window.location = "https://internetsafety.github.io/home/tricks/info";
+    
+}
+</script>
